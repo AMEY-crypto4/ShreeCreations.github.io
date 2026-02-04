@@ -165,11 +165,32 @@ section h2{
   gap:24px;
 }
 
-.media img{
-  width:100%;
-  border-radius:18px;
-  box-shadow:0 20px 40px rgba(15,23,42,.12);
+.media{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:24px;
 }
+
+.media-box{
+  height:260px;                /* controls visual uniformity */
+  background:#f1f5f9;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid var(--border);
+}
+
+.media-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;            /* key: crops evenly */
+  display:block;
+  transition:transform .6s ease;
+}
+
+.media-box:hover img{
+  transform:scale(1.05);       /* subtle enterprise hover */
+}
+
 
 /* ===== PROCESS ===== */
 .process{
