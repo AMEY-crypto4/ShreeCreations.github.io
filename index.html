@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shree Creation | Advertising & Event Printing Mumbai</title>
+
+<meta name="description" content="Shree Creation is a Mumbai-based advertising and event printing company offering flex, vinyl, sunboard and large-format printing for promotions, exhibitions and campaigns.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg-main:#f8fafc;
+  --bg-soft:#eef2ff;
+  --accent:#6366f1;
+  --accent-soft:#c7d2fe;
+  --text-main:#0f172a;
+  --text-muted:#475569;
+  --border:#e5e7eb;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Inter,system-ui,sans-serif;
+  background:var(--bg-main);
+  color:var(--text-main);
+  line-height:1.7;
+}
+
+/* ===== HEADER ===== */
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,255,255,.85);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+
+.nav{
+  max-width:1200px;
+  margin:auto;
+  padding:14px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.brand img{
+  height:44px;
+}
+
+.nav a{
+  margin-left:22px;
+  text-decoration:none;
+  color:var(--text-main);
+  font-weight:500;
+}
+
+/* ===== HERO ===== */
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(135deg,#eef2ff,#f8fafc);
+}
+
+.hero-inner{
+  max-width:1200px;
+  margin:auto;
+  padding:120px 20px 100px;
+  position:relative;
+  z-index:2;
+}
+
+.hero h1{
+  font-size:2.6rem;
+  max-width:820px;
+}
+
+.hero p{
+  max-width:720px;
+  margin-top:16px;
+  color:var(--text-muted);
+}
+
+.hero a{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 28px;
+  background:var(--accent);
+  color:#fff;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* Soft background shapes */
+.shape{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(70px);
+  opacity:.35;
+}
+
+.shape.one{
+  width:360px;height:360px;
+  background:#c7d2fe;
+  top:-140px;left:-140px;
+}
+
+.shape.two{
+  width:280px;height:280px;
+  background:#e0e7ff;
+  bottom:-100px;right:-100px;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:90px 20px;
+}
+
+section h2{
+  font-size:2rem;
+  margin-bottom:28px;
+}
+
+.muted{color:var(--text-muted)}
+
+/* ===== GRID / CARDS ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
+}
+
+.card{
+  background:#fff;
+  border-radius:18px;
+  padding:28px;
+  border:1px solid var(--border);
+  transition:transform .4s ease, box-shadow .4s ease;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(15,23,42,.08);
+}
+
+/* ===== MACHINE IMAGES ===== */
+.media{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:24px;
+}
+
+.media img{
+  width:100%;
+  border-radius:18px;
+  box-shadow:0 20px 40px rgba(15,23,42,.12);
+}
+
+/* ===== PROCESS ===== */
+.process{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:24px;
+}
+
+.step{
+  border-left:3px solid var(--accent);
+  padding-left:16px;
+}
+
+/* ===== FORM ===== */
+form{
+  background:#fff;
+  padding:40px;
+  border-radius:22px;
+  border:1px solid var(--border);
+}
+
+form input,form select,form textarea{
+  width:100%;
+  padding:14px;
+  margin-bottom:16px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  font-family:inherit;
+}
+
+form button{
+  width:100%;
+  padding:16px;
+  background:var(--accent);
+  border:none;
+  color:#fff;
+  font-weight:600;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#020617;
+  color:#e5e7eb;
+  padding:50px 20px;
+}
+
+footer a{
+  color:#c7d2fe;
+  text-decoration:none;
+}
+
+/* ===== ANIMATION ===== */
+.reveal{
+  opacity:0;
+  transform:translateY(16px);
+  transition:all .7s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:none;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:700px){
+  .hero h1{font-size:2.1rem}
+  .nav{flex-direction:column;align-items:flex-start;gap:10px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="images/logo-shree-creation.png" alt="Shree Creation Logo">
+      <strong>Shree Creation</strong>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#quote">Get Quote</a>
+      <a href="tel:9699009236">Call</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="shape one"></div>
+  <div class="shape two"></div>
+
+  <div class="hero-inner reveal">
+    <h1>Advertising & Event Printing for Campaigns, Promotions and Large-Scale Visibility</h1>
+    <p>
+      Shree Creation is a Mumbai-based large-format printing unit supporting
+      advertising agencies, event companies and campaign teams with reliable,
+      deadline-driven print execution.
+    </p>
+    <a href="#quote">Request Quotation</a>
+  </div>
+</div>
+
+<section class="reveal">
+  <h2>Operational Capabilities</h2>
+  <div class="grid">
+    <div class="card">High-resolution eco-solvent large-format printing</div>
+    <div class="card">Event, exhibition & political campaign materials</div>
+    <div class="card">Order-based urgent & bulk execution handling</div>
+  </div>
+</section>
+
+<section id="services" class="reveal">
+  <h2>Printing Services</h2>
+  <div class="grid">
+    <div class="card">Flex Banner Printing (Normal / Star / Backlit / Black Back)</div>
+    <div class="card">Eco Vinyl Printing (With / Without Lamination)</div>
+    <div class="card">Eco Vinyl with 3mm & 5mm Sunboard</div>
+    <div class="card">Standee Printing for Events & Retail</div>
+    <div class="card">Eco Canvas & Non-Tearable Prints</div>
+    <div class="card">Custom Advertising Print Requirements</div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Infrastructure & Work Samples</h2>
+  <div class="media">
+    <img src="images/images (1).jpeg">
+    <img src="images/images (2).jpeg">
+    <img src="images/images (3).jpeg">
+    <img src="images/images (4).jpeg"> 
+    <img src="images/images (5).jpeg">
+    <img src="images/images (6).jpeg">
+  </div>
+</section>
+
+<section id="process" class="reveal">
+  <h2>Execution Process</h2>
+  <div class="process">
+    <div class="step">Requirement & size finalization</div>
+    <div class="step">Material selection</div>
+    <div class="step">Print production</div>
+    <div class="step">Quality check</div>
+    <div class="step">Delivery / handover</div>
+  </div>
+</section>
+
+<section id="quote" class="reveal">
+  <h2>Request a Quotation</h2>
+  <form onsubmit="sendWA();return false;">
+    <input id="company" placeholder="Company / Individual Name" required>
+    <input id="phone" placeholder="Contact Number" required>
+    <select id="material">
+      <option>Flex Banner</option>
+      <option>Eco Vinyl</option>
+      <option>Sunboard</option>
+      <option>Standee</option>
+      <option>Canvas</option>
+      <option>Other</option>
+    </select>
+    <input id="size" placeholder="Print Size">
+    <input id="qty" placeholder="Quantity">
+    <select id="usage">
+      <option>Outdoor</option>
+      <option>Indoor</option>
+    </select>
+    <input id="date" placeholder="Required By (Date)">
+    <textarea id="details" placeholder="Additional requirements"></textarea>
+    <button type="submit">Send on WhatsApp</button>
+  </form>
+</section>
+
+<section class="reveal">
+  <h2>Location</h2>
+  <p class="muted">
+    Shop No 28/13, Modi Seth Chawl, GD Ambekar Marg, Near Nandi Electronics,<br>
+    Kalachowki, Lal Baug, Mumbai – 400033
+  </p>
+  <iframe src="https://www.google.com/maps?q=Shree%20Creation%20Kalachowki%20Mumbai&output=embed"
+    style="width:100%;height:360px;border:0;border-radius:18px"></iframe>
+</section>
+
+<footer>
+  <strong>Shree Creation</strong><br>
+  Advertising & Event Printing – Mumbai<br><br>
+  📞 <a href="tel:9699009236">9699009236</a> |
+  ✉ shreecreation04@gmail.com
+</footer>
+
+<script>
+const items=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver(e=>{
+  e.forEach(x=>x.isIntersecting&&x.target.classList.add('active'));
+},{threshold:.15});
+items.forEach(i=>io.observe(i));
+
+function sendWA(){
+  const msg=`Quotation Request
+Company: ${company.value}
+Phone: ${phone.value}
+Material: ${material.value}
+Size: ${size.value}
+Quantity: ${qty.value}
+Usage: ${usage.value}
+Required By: ${date.value}
+Details: ${details.value}`;
+  window.open(`https://wa.me/919699009236?text=${encodeURIComponent(msg)}`,'_blank');
+}
+</script>
+
+</body>
+</html>
